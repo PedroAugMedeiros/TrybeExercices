@@ -23,8 +23,8 @@ let sum = a * b;
 console.log(sum)
 
 // Calculadora de Divisão
-let a = 7;
-let b = -7;
+let a = 278;
+let b = 10;
 let sum = a / b;
 
 console.log(sum)
