@@ -1,0 +1,55 @@
+<main id="paiDoPai">
+    <section class="notRemove" id="pai">
+      <section id="primeiroFilho"></section>
+      <section class="notRemove" id="elementoOndeVoceEsta">
+        <section class="notRemove" id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+    <script>
+   document.querySelector("#elementoOndeVoceEsta").parentNode.style.color = "red"
+    
+ document.querySelectorAll("section")[4].innerText = "FirstNeto"
+document.querySelector("#pai").lastElementChild.previousElementSibling
+    
+document.querySelector("#elementoOndeVoceEsta").previousElementSibling
+    
+document.querySelector("#elementoOndeVoceEsta").nextElementSibling
+      
+
+     let AddBrother = document.querySelector("#pai")
+    
+     let CreatSectionBrother = document.createElement("section")
+      CreatSectionBrother.innerText = "xdOIaEuAki"
+     AddBrother.appendChild(CreatSectionBrother)
+
+     let AddChild = document.querySelector("#elementoOndeVoceEsta")
+    
+    let CreatSectionChild = document.createElement("section")
+     CreatSectionChild.innerText = "xdOIaEuAkiFilho"
+    AddChild.appendChild(CreatSectionChild)
+
+    let AddChildOfChild = document.querySelector("#primeiroFilhoDoFilho")
+    
+    let CreatSectionChildOfChild = document.createElement("section")
+     CreatSectionChildOfChild.innerText = "xdOIaEuAkiFilhoDoFilho"
+    AddChildOfChild.appendChild(CreatSectionChildOfChild)
+
+   document.querySelector("#primeiroFIlhoDoFIlho").firstChild.parentNode.parentNode.nextElementSibling
+
+
+    let Geral  = document.getElementById("#paiDoPai").children
+
+    for (let i = 0; i < Geral.length; i++ ){
+        if (i === "".notRemove ){
+            continue
+        } else {
+            ListaDeSections.removeChild(ListaDeSections)
+        }
+
+    }
+    </script>
+  </main>

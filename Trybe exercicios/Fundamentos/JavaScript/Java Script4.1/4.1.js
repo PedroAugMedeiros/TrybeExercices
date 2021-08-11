@@ -1,48 +1,48 @@
 /*EXERCICIO 1
   
 Selocione o Codigo e clique no Play o Resultado aparecera no seu Output
-Calculadora de Adição*/                                                                
-let a = 7;
-let b = 7;
-let sum = a + b;
+Calculadora de Adição*/                                                              
 
-console.log(sum)
-    
+function sum(a, b) {
+console.log(a + b)
+
+}
+sum(7, 7)
+
 // Calculadora de Subtração
-let a = 7;
-let b = 7;
-let sum = a - b;
-
-console.log(sum)
+function sum(a, b) {
+    console.log(a - b)
+    
+    }
+    sum(7, 7)
 
 // Calculadora de Multiplicação
-let a = 7;
-let b = 7;
-let sum = a * b;
-
-console.log(sum)
+function sum(a, b) {
+    console.log(a * b)
+    
+    }
+    sum(7, 7)
 
 // Calculadora de Divisão
-let a = 278;
-let b = 10;
-let sum = a / b;
-
-console.log(sum)
+function sum(a, b) {
+    console.log(a / b)
+    
+    }
+    sum(7, 7)
 
 // Calculadora de Resto de Divisão
-let a = 7;
-let b = 7;
-let sum = a % b;
-
-console.log(sum)
+function sum(a, b) {
+    console.log(a % b)
+    
+    }
+    sum(7, 7)
        
 
 /* EXERCICIO 2 
 Registra o maior entre 2 numeros*/
 
 
-let a = 7;
-let b = 8;
+function Major(a, b){
 
 if (a > b) {
 console.log("a") 
@@ -50,13 +50,11 @@ console.log("a")
 else if (a < b){
 console.log("b")
 }
-
+}
+Major (10, 100)
 /* EXERCICIO 3 
 Registra o maior entre 3 numeros*/
-
-let a = 9;
-let b = 8;
-let c = 10;
+function Major (a, b, c){
 
 if (a > b && a > c) {
     console.log("a")
@@ -67,12 +65,12 @@ if (a > b && a > c) {
 }else {
     console.log("são iguais")
 }
+}
+Major (9, 8, 10)
 /* EXERCICIO 4 
 programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.*/
 
-
-let number = 0;
-
+function Numb (number){
 if (number > 0) {
     console.log("postive")
 }
@@ -81,14 +79,13 @@ else if (number < 0) {
 } else {
     console.log("zero")
 }
-
+}
+Numb(-1)
 /* EXERCICIO 5
  programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.*/
+ 
+function Angle (angulo1, angulo2, angulo3, sum){
 
- let angulo1 = 40;
- let angulo2 = 100;
- let angulo3 = 40;
- let sum = angulo1 + angulo2 + angulo3;
 
  if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0){
  console.log("error, this not is a valid angle")
@@ -98,6 +95,10 @@ else if (sum === 180) {
 } else {
     console.log("false")
 }
+}
+
+Angle(40, 100, 40, 40+100+40)
+
 
 /* EXERCICIO 6
 programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
